@@ -552,59 +552,101 @@ section#research {
 .desktop-only {
   display: block;
 }
-
-.desktop-only {
-  display: block;
-}
 .mobile-only {
   display: none;
 }
 
-/* 手机端切换显示 */
-@media (max-width: 767px) {
-  .desktop-only {
-    display: none !important;
+/* Default: desktop version shows cards, hides plain text */
+.desktop-only {
+  display: block; /* Keep only one of these */
+}
+
+.mobile-only {
+  display: none;
+}
+
+/* Mobile specific styles */
+@media (max-width: 767px) { 
+  body {
+    font-size: 14px; /* Slightly smaller base font size for phones */
   }
-    
-  .navbar {
-    display: none; /* Hide topic buttons on mobile */
-    opacity: 0; /* Ensure animation is reset when hidden */
+
+  .desktop-only {
+    display: none !important; /* This will now only apply to actual mobile sizes */
+  }
+
+  .topic-buttons {
+    display: none; /* Hide topic buttons on mobile, !important is removed for cleaner code */
+    opacity: 0;
     pointer-events: none;
   }
 
   .mobile-only {
-    display: inline;
+    display: block; /* Use block for list items to stack properly */
   }
 
-    .M_paper-list {
-      list-style: none;
-      padding: 30rem;
-      max-width: 800px;
-    }
+  /* Hero section adjustments for mobile */
+  .hero-content h1 {
+    font-size: 2.5rem; /* Smaller font for hero title */
+  }
+  .hero-content p {
+    font-size: 1.1rem; /* Smaller font for hero text */
+  }
+  #hero_underline,
+  .center-underline {
+    max-width: 90%; /* Responsive width for underlines */
+    width: auto; /* Allow auto width */
+  }
 
+  /* Navbar adjustments for mobile */
+  .navbar {
+    display: none; 
+    opacity: 0;
+    pointer-events: none;
+  }
 
-    .M_paper-line {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      flex-wrap: wrap;
-      gap: 1rem; /* 增加两边元素之间的空隙 */
-    }
+  .nav-left {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    width: 100%;
+  }
 
-    .M_collaborator {
-      font-style: italic;
-      color: #444;
-      margin-left: 2rem;     /* 控制作者与标题之间的距离 */
-      margin-right: 2rem;  /* 作者离右侧边距的空隙 */
-      white-space: nowrap;   /* 防止换行 */
-    }
+  .nav-left .brand {
+    margin-right: 0;
+    margin-bottom: 5px; /* Space between brand and links */
+  }
 
+  .nav-left a {
+    font-size: 0.9rem;
+  }
+
+  /* Research section adjustments for mobile papers */
+  .M_paper-list {
+    list-style: none;
+    padding: 0 1rem; /* Reduced padding */
+    max-width: 100%; /* Ensure it takes full width */
+    margin: 0 auto; /* Center the list */
+  }
+
+  .M_paper-list li {
+    margin-bottom: 1rem; /* Reduced margin */
+    padding-bottom: 0.8rem;
+    max-width: 100%;
+  }
+
+  .M_paper-line {
+    flex-direction: column; /* Stack title and collaborators */
+    align-items: flex-start; /* Align text to the left */
+    gap: 0.2rem; /* Smaller gap for stacked items */
+  }
 
     .M_paper-title {
   font-weight: 600;
   color: #b01825;
   font-size: 1.1rem;
-        margin-left: 2rem;
+  margin-left: 2rem;
+        text-align: center;
     }
     .M_paper-title a {
       color: #b01825;
@@ -617,17 +659,43 @@ section#research {
       color: #333;
       font-weight: bold;
       font-style: italic;
+      text-align: center;
+    }
+    .M_collaborator {
+      font-style: italic;
+      color: #444;
+      margin-left: 2rem;     /* 控制作者与标题之间的距离 */
+      margin-right: 2rem;  /* 作者离右侧边距的空隙 */
+      white-space: nowrap;   /* 防止换行 */
+      text-align: center;
     }
   .M_submitted {
       margin-top: 0.3rem;
       font-size: 0.95rem;
       margin-left: 2rem;
       color: rgba(51, 51, 51, 0.8);
+      text-align: center;
    }
+
   .section-content {
     padding: 1rem;
     width: 100%;
     max-width: 100%;
+  }
+
+  /* Talks section adjustments for mobile */
+  .talks-container {
+    padding: 0 1rem;
+  }
+
+  .talk-year {
+    font-size: 1.4rem;
+    padding-left: 8px; /* Slightly less padding */
+  }
+
+  .talk-list li {
+    font-size: 1rem; /* Smaller font for talk details */
+    padding-left: 1rem; /* Reduced padding */
   }
 }
 
