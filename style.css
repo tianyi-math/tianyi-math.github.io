@@ -229,6 +229,10 @@ section#research {
   transition: transform 0.8s ease-out;
 }
 
+#hero_underline {
+  background-color: #333;
+}
+
 #research_underline {
   background-color: #b01825;
 }
@@ -244,10 +248,10 @@ section#research {
   display: grid;
   grid-template-columns: repeat(3, minmax(280px, 1fr));
   column-gap: 16px;  /* 横向间距变小 */
-  row-gap: 25px;     /* 保持垂直间距 */
+  row-gap: 20px;     /* 保持垂直间距 */
   max-width: 1200px;
   margin: 0 auto;
-  padding: 40px 20px;
+  padding: 20px 20px;
   box-sizing: border-box;
 }
 
@@ -517,15 +521,15 @@ section#research {
   font-size: 1.6rem;
   font-weight: 600;
   color: #1e3a8a;
-  margin-top: 40px;
-  margin-bottom: 12px;
+  margin-top: 20px;
+  margin-bottom: 6px;
   border-left: 4px solid #1e3a8a;
   padding-left: 12px;
 }
 .talk-list {
   list-style: none;
   padding-left: 0;
-  margin-bottom: 30px;
+  margin-bottom: 4px;
 }
 
 .talk-list li {
@@ -544,4 +548,86 @@ section#research {
   margin: 10px 0;
 }
 
+/* 默认：桌面版显示卡片，隐藏纯文本 */
+.desktop-only {
+  display: block;
+}
+
+.desktop-only {
+  display: block;
+}
+.mobile-only {
+  display: none;
+}
+
+/* 手机端切换显示 */
+@media (max-width: 767px) {
+  .desktop-only {
+    display: none !important;
+  }
+    
+  .navbar {
+    display: none; /* Hide topic buttons on mobile */
+    opacity: 0; /* Ensure animation is reset when hidden */
+    pointer-events: none;
+  }
+
+  .mobile-only {
+    display: inline;
+  }
+
+    .M_paper-list {
+      list-style: none;
+      padding: 30rem;
+      max-width: 800px;
+    }
+
+
+    .M_paper-line {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 1rem; /* 增加两边元素之间的空隙 */
+    }
+
+    .M_collaborator {
+      font-style: italic;
+      color: #444;
+      margin-left: 2rem;     /* 控制作者与标题之间的距离 */
+      margin-right: 2rem;  /* 作者离右侧边距的空隙 */
+      white-space: nowrap;   /* 防止换行 */
+    }
+
+
+    .M_paper-title {
+  font-weight: 600;
+  color: #b01825;
+  font-size: 1.1rem;
+        margin-left: 2rem;
+    }
+    .M_paper-title a {
+      color: #b01825;
+    }
+
+    .M_journal{
+      margin-top: 0.3rem;
+      font-size: 0.95rem;
+      margin-left: 2rem;
+      color: #333;
+      font-weight: bold;
+      font-style: italic;
+    }
+  .M_submitted {
+      margin-top: 0.3rem;
+      font-size: 0.95rem;
+      margin-left: 2rem;
+      color: rgba(51, 51, 51, 0.8);
+   }
+  .section-content {
+    padding: 1rem;
+    width: 100%;
+    max-width: 100%;
+  }
+}
 
