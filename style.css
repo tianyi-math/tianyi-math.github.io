@@ -585,40 +585,33 @@ section#research {
     display: block; /* Use block for list items to stack properly */
   }
 
-  /* Hero section adjustments for mobile */
+/* Hero section adjustments for mobile */
   .hero-content h1 {
-    font-size: 2.5rem; /* Smaller font for hero title */
+    font-size: 1.8rem; /* Further reduce font size for very small screens */
   }
   .hero-content p {
-    font-size: 1.1rem; /* Smaller font for hero text */
+    font-size: 1rem; /* Adjust paragraph font size for readability on small screens */
   }
-  #hero_underline,
-  .center-underline {
-    max-width: 90%; /* Responsive width for underlines */
-    width: auto; /* Allow auto width */
-  }
+    .center-underline {
+      width: 600px;
+      height: 3px;
+      margin: 0 auto 3rem auto;
+      position: relative;
+      transform: scaleX(0);
+      transform-origin: center;
+      transition: transform 0.8s ease-out;
+    }
+  #intro {
+    padding: 0 1rem; /* Reduce padding to give more horizontal space to the text */
+    text-align: left; /* Optional: left align intro text for better readability on mobile */
+  }    
+    
 
   /* Navbar adjustments for mobile */
   .navbar {
     display: none; 
     opacity: 0;
     pointer-events: none;
-  }
-
-  .nav-left {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
-    width: 100%;
-  }
-
-  .nav-left .brand {
-    margin-right: 0;
-    margin-bottom: 5px; /* Space between brand and links */
-  }
-
-  .nav-left a {
-    font-size: 0.9rem;
   }
 
   /* Research section adjustments for mobile papers */
@@ -677,25 +670,30 @@ section#research {
       text-align: center;
    }
 
+    
+  section {
+    padding: 1.5rem 0.8rem; /* Adjust overall section padding for mobile, reducing side padding */
+  }
+
   .section-content {
-    padding: 1rem;
+    padding: 0 0.5rem; /* Reduce padding inside section content for more space */
     width: 100%;
     max-width: 100%;
   }
 
   /* Talks section adjustments for mobile */
   .talks-container {
-    padding: 0 1rem;
+    padding: 0 0.5rem;
   }
 
   .talk-year {
-    font-size: 1.4rem;
+    font-size: 1rem;
     padding-left: 8px; /* Slightly less padding */
   }
 
   .talk-list li {
-    font-size: 1rem; /* Smaller font for talk details */
-    padding-left: 1rem; /* Reduced padding */
+    font-size: 0.8rem; /* Smaller font for talk details */
+    padding-left: 0.5rem; /* Reduced padding */
   }
 }
 
