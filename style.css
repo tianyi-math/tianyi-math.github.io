@@ -554,7 +554,7 @@ section#research {
 }
 
 /* Mobile specific styles */
-@media (max-width: 7679px) { 
+@media (max-width: 767px) { 
   body {
     font-size: 14px; /* Slightly smaller base font size for phones */
   }
