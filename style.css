@@ -598,7 +598,7 @@ section#research {
   .M_paper-list {
     list-style: none;
     max-width: 100%; /* Ensure it takes full width */
-    margin: 0 auto; /* Center the list */
+    margin: 0; /* Center the list */
   }
 
   .M_paper-list li {
