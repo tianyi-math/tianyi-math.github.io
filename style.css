@@ -607,12 +607,6 @@ section#research {
     max-width: 100%;
   }
 
-  .M_paper-line {
-    flex-direction: column; /* Stack title and collaborators */
-    align-items: flex-start; /* Align text to the left */
-    gap: 0.2rem; /* Smaller gap for stacked items */
-  }
-
     .M_paper-title {
   font-weight: 600;
   color: #b01825;
