@@ -617,7 +617,7 @@ section#research {
   font-weight: 600;
   color: #b01825;
   font-size: 1.1rem;
-        text-align: center;
+  text-align: center;
     }
     .M_paper-title a {
       color: #b01825;
@@ -626,7 +626,6 @@ section#research {
     .M_journal{
       margin-top: 0.3rem;
       font-size: 0.95rem;
-      margin-left: 2rem;
       color: #333;
       font-weight: bold;
       font-style: italic;
@@ -635,15 +634,12 @@ section#research {
     .M_collaborator {
       font-style: italic;
       color: #444;
-      margin-left: 2rem;     /* 控制作者与标题之间的距离 */
-      margin-right: 2rem;  /* 作者离右侧边距的空隙 */
       white-space: nowrap;   /* 防止换行 */
       text-align: center;
     }
   .M_submitted {
       margin-top: 0.3rem;
       font-size: 0.95rem;
-      margin-left: 2rem;
       color: rgba(51, 51, 51, 0.8);
       text-align: center;
    }
