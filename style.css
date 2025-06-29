@@ -611,7 +611,7 @@ section#research {
   font-weight: 600;
   color: #b01825;
   font-size: 1.1rem;
-  text-align: center;
+  text-align: left;
     }
     .M_paper-title a {
       color: #b01825;
@@ -623,19 +623,19 @@ section#research {
       color: #333;
       font-weight: bold;
       font-style: italic;
-      text-align: center;
+      text-align: left;
     }
     .M_collaborator {
       font-style: italic;
       color: #444;
       white-space: nowrap;   /* 防止换行 */
-      text-align: center;
+      text-align: right;
     }
   .M_submitted {
       margin-top: 0.3rem;
       font-size: 0.95rem;
       color: rgba(51, 51, 51, 0.8);
-      text-align: center;
+      text-align: left;
    }
 
     
