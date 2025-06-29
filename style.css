@@ -554,7 +554,7 @@ section#research {
 }
 
 /* Mobile specific styles */
-@media (max-width: 767px) { 
+@media (max-width: 7679px) { 
   body {
     font-size: 14px; /* Slightly smaller base font size for phones */
   }
@@ -582,7 +582,7 @@ section#research {
     font-size: 0.9rem; /* Adjust paragraph font size for readability on small screens */
   }
     .center-underline {
-      width: 600px;
+      width: 400px;
       height: 3px;
       margin: 0 auto 3rem auto;
       position: relative;
@@ -606,7 +606,6 @@ section#research {
   /* Research section adjustments for mobile papers */
   .M_paper-list {
     list-style: none;
-    padding: 0 1rem; /* Reduced padding */
     max-width: 100%; /* Ensure it takes full width */
     margin: 0 auto; /* Center the list */
   }
