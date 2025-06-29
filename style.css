@@ -582,13 +582,7 @@ section#research {
     font-size: 0.9rem; /* Adjust paragraph font size for readability on small screens */
   }
     .center-underline {
-      width: 400px;
-      height: 3px;
-      margin: 0 auto 3rem auto;
-      position: relative;
-      transform: scaleX(0);
-      transform-origin: center;
-      transition: transform 0.8s ease-out;
+      display: none !important;
     }
   #intro {
     padding: 0 0.5rem; /* Reduce padding to give more horizontal space to the text */
