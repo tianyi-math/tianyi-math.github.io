@@ -12,6 +12,7 @@ body {
   background-color: var(--siteBackgroundColor);
   color: var(--paragraphMediumColor);
   margin: 0;
+  padding: 0; 
 }
 
 
@@ -37,19 +38,6 @@ body {
   margin-bottom: 2rem;
 }
 
-/* 名字后的下划线 */
-.underline {
-  width: 0;
-  height: 3px;
-  background-color: #333;
-  margin: 0 auto 1.5rem auto;
-  transition: width 1s ease-in-out;
-}
-
-/* 当页面加载完成时触发动画 */
-body.loaded .underline {
-  width: 500px; 
-}
 
 #intro {
   max-width: 750px;      
@@ -584,13 +572,14 @@ section#research {
   .mobile-only {
     display: block; /* Use block for list items to stack properly */
   }
-
+  
+    
 /* Hero section adjustments for mobile */
   .hero-content h1 {
     font-size: 1.8rem; /* Further reduce font size for very small screens */
   }
   .hero-content p {
-    font-size: 1rem; /* Adjust paragraph font size for readability on small screens */
+    font-size: 0.9rem; /* Adjust paragraph font size for readability on small screens */
   }
     .center-underline {
       width: 600px;
@@ -602,7 +591,7 @@ section#research {
       transition: transform 0.8s ease-out;
     }
   #intro {
-    padding: 0 1rem; /* Reduce padding to give more horizontal space to the text */
+    padding: 0 0.5rem; /* Reduce padding to give more horizontal space to the text */
     text-align: left; /* Optional: left align intro text for better readability on mobile */
   }    
     
@@ -672,11 +661,11 @@ section#research {
 
     
   section {
-    padding: 1.5rem 0.8rem; /* Adjust overall section padding for mobile, reducing side padding */
+    padding: 0rem; /* Adjust overall section padding for mobile, reducing side padding */
   }
 
   .section-content {
-    padding: 0 0.5rem; /* Reduce padding inside section content for more space */
+    padding: 0 0rem; /* Reduce padding inside section content for more space */
     width: 100%;
     max-width: 100%;
   }
