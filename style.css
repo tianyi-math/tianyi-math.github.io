@@ -15,10 +15,14 @@ body {
   padding: 0; 
 }
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 
 
 .hero {
-  height: 100vh;
+  min-height: 100vh;
   background: linear-gradient(to bottom right, #fafafa, #eee);
   display: flex;
   justify-content: center;
@@ -91,14 +95,14 @@ section#research {
   text-align: center;
   font-size: 3rem;       
   margin-bottom: 2rem;
-  font-family: 'EB Garamond', serif;
+  font-family: var(--heading-font-font-family);
 }
 
 #talks h2 {
   text-align: center;
   font-size: 3rem;       
   margin-bottom: 2rem;
-  font-family: 'EB Garamond', serif;
+  font-family: var(--heading-font-font-family);
 }
 
 
@@ -347,7 +351,7 @@ section#research {
 }
 
 .paper-journal {
-  font-size: 1 rem;
+  font-size: 1rem;
   font-weight: bold;
   margin-top: 4px;
   color: #333;
@@ -454,7 +458,6 @@ section#research {
   padding: 5px 10px;
   border-radius: 5px;
   font-size: 0.7rem;
-  font
   cursor: pointer;
 }
 
@@ -536,14 +539,6 @@ section#research {
   margin: 10px 0;
 }
 
-/* 默认：桌面版显示卡片，隐藏纯文本 */
-.desktop-only {
-  display: block;
-}
-.mobile-only {
-  display: none;
-}
-
 /* Default: desktop version shows cards, hides plain text */
 .desktop-only {
   display: block; /* Keep only one of these */
@@ -579,7 +574,7 @@ section#research {
     font-size: 2rem; /* Further reduce font size for very small screens */
   }
   .hero-content p {
-    font-size: 1.rem; /* Adjust paragraph font size for readability on small screens */
+    font-size: 1rem; /* Adjust paragraph font size for readability on small screens */
   }
   #intro {
     padding: 0 0.5rem; /* Reduce padding to give more horizontal space to the text */
@@ -664,3 +659,14 @@ section#research {
   }
 }
 
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

@@ -3,9 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Tianyi Yu is a CRM-ISM postdoctoral fellow at Université du Québec à Montréal working in algebraic combinatorics." />
   <title>Tianyi – Math Postdoc</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style-portrait.css" />
 </head>
+<body>
     
 <!-- ✅ 顶部导航栏 -->
 <div class="navbar">
@@ -14,14 +16,13 @@
     <a href="#research">Research</a>
     <a href="#talks">Talks</a>
     <div id="topic-buttons" class="topic-buttons">
-      <button>Bumpless Pipedream</button>
-      <button>Pipedream</button>
-      <button>Lascoux polynomial</button>
-      <button>Grothendieck polynomial</button>
-      <button>Crystal</button>
-      <button>Coinvariant Algebra</button>
-      <button>Hecke Insertion</button>
-      <button>Rajcode</button>
+      <button type="button">Bumpless Pipedream</button>
+      <button type="button">Pipedream</button>
+      <button type="button">Lascoux polynomial</button>
+      <button type="button">Grothendieck polynomial</button>
+      <button type="button">Schubert calculus</button>
+      <button type="button">Crystal</button>
+      <button type="button">Coinvariant Algebra</button>
     </div>
   </div>
 </div>
@@ -55,20 +56,197 @@ document.addEventListener("DOMContentLoaded", () => {
     
 
 
-<body>
   <section class="hero">
-    <div class="hero-content">
-      <h1>Tianyi Yu 喻天奕</h1>
-        <div class="center-underline fade-in-underline desktop-only" id = "hero_underline"></div>
-        <div id = "intro"><p>I am a <a href="https://www.crmath.ca/en/fellowships-and-visitors/crm-ism-postdoctoral-fellowships/" target="blank">CRM-ISM postdoc</a> at <a href="https://uqam.ca/" target="blank">Université du Québec à Montréal</a>.
-        I got my Ph.D. in 2024 from the 
-      <a href="http://www.ucsd.edu">University of California, San Diego</a>,
-        advised by <a href="https://www.math.ucsd.edu/~bprhoades/">Brendon Rhoades</a>.
-    My research is about algebraic combinatorics. 
-    My email address is yu.tianyi (at) uqam.ca.
-        My CV is <a href="./CV.pdf" target="blank">here</a>.</p></div>
+    <div class="hero-card-stage">
+      <article class="academic-identity-card" id="hero-card" aria-labelledby="hero-name">
+        <div class="hero-card-inner">
+          <div class="hero-card-face hero-card-front" data-hero-face="front" aria-hidden="false">
+            <div class="identity-copy">
+              <p class="identity-kicker">CRM–ISM Postdoctoral Fellow</p>
+              <h1 id="hero-name"><span class="name-english">Tianyi Yu</span><span class="name-chinese" lang="zh">喻天奕</span></h1>
+              <p class="identity-field">Algebraic Combinatorics</p>
+              <p class="identity-position">
+                Postdoctoral researcher at
+                <a href="https://uqam.ca/" target="_blank" rel="noopener noreferrer">Université du Québec à Montréal</a>
+              </p>
+              <p class="identity-research">
+                I study Schubert calculus and combinatorial K-theory, especially
+                Grothendieck and Lascoux polynomials, bumpless pipedreams, and crystals.
+              </p>
+              <div class="identity-card-footer">
+                <div class="identity-contact" aria-label="Email address">
+                  <span class="identity-contact-label">Email</span>
+                  <span class="identity-email">yu.tianyi@uqam.ca</span>
+                </div>
+                <nav class="identity-links" aria-label="Profile links">
+                  <a href="./CV.pdf" target="_blank" rel="noopener noreferrer">CV</a>
+                  <a href="https://scholar.google.com/citations?user=GdOLCY4AAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+                </nav>
+              </div>
+              <button class="hero-flip-control" type="button" data-hero-flip aria-controls="hero-card-back" aria-expanded="false">
+                Research &amp; background <span aria-hidden="true">→</span>
+              </button>
+            </div>
+
+            <figure class="identity-portrait">
+              <div class="portrait-placeholder" aria-hidden="true">TY</div>
+              <img src="./portrait.png" alt="Tianyi Yu seated beside a window at sunset" width="1254" height="1254" fetchpriority="high" decoding="async" onerror="this.hidden=true" />
+            </figure>
+          </div>
+
+          <div class="hero-card-face hero-card-back" id="hero-card-back" data-hero-face="back" aria-hidden="true" inert>
+            <p class="identity-kicker">Research &amp; background</p>
+            <h2>Combinatorics through geometry and K-theory</h2>
+            <p>
+              My research is in algebraic combinatorics, especially Schubert calculus and combinatorial K-theory. I study combinatorial models for Schubert, Grothendieck, and Lascoux polynomials, including bumpless pipedreams, tableaux, insertion algorithms, and crystal structures.
+            </p>
+            <p>
+              I received my Ph.D. from the University of California, San Diego in 2024, advised by Brendon Rhoades. I am currently a CRM–ISM postdoctoral fellow at UQAM and will be a J. L. Doob Postdoctoral Fellow at UIUC beginning in January 2027.
+            </p>
+            <div class="hero-research-topics" aria-label="Research topics">
+              <button type="button" data-research-topic="schubert calculus">Schubert calculus</button>
+              <button type="button" data-research-topic="grothendieck polynomial">Grothendieck polynomials</button>
+              <button type="button" data-research-topic="bumpless pipedream">Bumpless pipedreams</button>
+              <button type="button" data-research-topic="crystal">Crystals</button>
+              <button type="button" data-research-topic="coinvariant algebra">Coinvariant algebras</button>
+            </div>
+            <button class="hero-flip-control hero-flip-control-back" type="button" data-hero-flip aria-controls="hero-name">
+              <span aria-hidden="true">←</span> Back to profile
+            </button>
+          </div>
+        </div>
+      </article>
     </div>
   </section>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const card = document.getElementById("hero-card");
+  if (!card) return;
+
+  const front = card.querySelector('[data-hero-face="front"]');
+  const back = card.querySelector('[data-hero-face="back"]');
+  const flipControls = card.querySelectorAll("[data-hero-flip]");
+  const interestTags = card.querySelectorAll("[data-research-topic]");
+  const researchSection = document.getElementById("research");
+  const desktopView = window.matchMedia("(min-width: 768px)");
+  const interactiveSelector = 'a, button, input, select, textarea, label, [role="button"], [contenteditable="true"]';
+  let cardPress = null;
+  let suppressCardClick = false;
+
+  const isInteractiveTarget = target =>
+    target instanceof Element && Boolean(target.closest(interactiveSelector));
+
+  const hasTextSelection = () => {
+    const selection = window.getSelection();
+    return Boolean(selection && !selection.isCollapsed && selection.toString().trim());
+  };
+
+  const setFlipped = (shouldFlip) => {
+    const isFlipped = desktopView.matches && shouldFlip;
+    card.classList.toggle("flipped", isFlipped);
+    front.setAttribute("aria-hidden", String(isFlipped));
+    back.setAttribute("aria-hidden", String(!isFlipped));
+    front.inert = isFlipped;
+    back.inert = !isFlipped;
+    flipControls[0].setAttribute("aria-expanded", String(isFlipped));
+  };
+
+  flipControls.forEach(control => {
+    control.addEventListener("click", event => {
+      event.stopPropagation();
+      setFlipped(!card.classList.contains("flipped"));
+    });
+  });
+
+  card.addEventListener("pointerdown", event => {
+    suppressCardClick = false;
+
+    if (!desktopView.matches || event.button !== 0 || isInteractiveTarget(event.target)) {
+      cardPress = null;
+      return;
+    }
+
+    cardPress = {
+      pointerId: event.pointerId,
+      startX: event.clientX,
+      startY: event.clientY,
+      startedAt: performance.now(),
+      moved: false
+    };
+  });
+
+  card.addEventListener("pointermove", event => {
+    if (!cardPress || cardPress.pointerId !== event.pointerId) return;
+
+    const distance = Math.hypot(
+      event.clientX - cardPress.startX,
+      event.clientY - cardPress.startY
+    );
+
+    if (distance > 6) cardPress.moved = true;
+  });
+
+  card.addEventListener("pointerup", event => {
+    if (!cardPress || cardPress.pointerId !== event.pointerId) return;
+
+    const heldTooLong = performance.now() - cardPress.startedAt > 350;
+    suppressCardClick = cardPress.moved || heldTooLong || hasTextSelection();
+    cardPress = null;
+  });
+
+  card.addEventListener("pointercancel", () => {
+    suppressCardClick = true;
+    cardPress = null;
+  });
+
+  card.addEventListener("pointerleave", event => {
+    if (!cardPress || !event.buttons) return;
+    suppressCardClick = true;
+    cardPress = null;
+  });
+
+  card.addEventListener("dragstart", () => {
+    suppressCardClick = true;
+  });
+
+  card.addEventListener("click", event => {
+    if (!desktopView.matches || isInteractiveTarget(event.target)) return;
+
+    if (suppressCardClick || hasTextSelection()) {
+      suppressCardClick = false;
+      return;
+    }
+
+    setFlipped(!card.classList.contains("flipped"));
+  });
+
+  interestTags.forEach(tag => {
+    tag.addEventListener("click", event => {
+      event.stopPropagation();
+
+      const topic = tag.dataset.researchTopic;
+      const targetButton = Array.from(document.querySelectorAll("#topic-buttons button"))
+        .find(button => button.textContent.trim().toLowerCase() === topic);
+
+      if (targetButton && !targetButton.classList.contains("active")) {
+        targetButton.click();
+      }
+
+      if (researchSection) {
+        const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        window.scrollTo({
+          top: Math.max(0, researchSection.offsetTop - 56),
+          behavior: reducedMotion ? "auto" : "smooth"
+        });
+      }
+    });
+  });
+
+  desktopView.addEventListener("change", () => setFlipped(false));
+  setFlipped(false);
+});
+</script>
     
 
 
@@ -82,6 +260,16 @@ document.addEventListener("DOMContentLoaded", () => {
 document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll(".card-inner").forEach(card => {
     let pressTimer = null;
+
+    card.setAttribute("role", "button");
+    card.setAttribute("tabindex", "0");
+    card.setAttribute("aria-label", "Show or hide this paper's abstract");
+    card.setAttribute("aria-pressed", "false");
+
+    const toggleCard = () => {
+      const isFlipped = card.classList.toggle("flipped");
+      card.setAttribute("aria-pressed", String(isFlipped));
+    };
 
     card.addEventListener("pointerdown", (e) => {
       if (e.target.closest("a")) return; // don't flip when clicking a link
@@ -97,7 +285,7 @@ document.addEventListener("DOMContentLoaded", () => {
         clearTimeout(pressTimer);
         pressTimer = null;
         if (!e.target.closest("a")) {
-          card.classList.toggle("flipped");
+          toggleCard();
         }
       }
     });
@@ -106,6 +294,19 @@ document.addEventListener("DOMContentLoaded", () => {
       if (pressTimer) {
         clearTimeout(pressTimer);
         pressTimer = null;
+      }
+    });
+
+    card.addEventListener("pointercancel", () => {
+      if (pressTimer) clearTimeout(pressTimer);
+      pressTimer = null;
+    });
+
+    card.addEventListener("keydown", (e) => {
+      if (e.target.closest("a")) return;
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        toggleCard();
       }
     });
   });
@@ -138,7 +339,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // 高亮匹配卡片
       cards.forEach(card => {
-        const topics = card.dataset.topics?.split(',').map(t => t.trim()) || [];
+        const topics = (card.dataset.topics || '').split(',').map(t => t.trim());
         if (topics.includes(topic)) {
           card.classList.add('highlighted');
         } else {
@@ -148,21 +349,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
-        
-cards.forEach(card => {
-  const topics = card.dataset.topics?.split(',').map(t => t.trim().toLowerCase()) || [];
-  const inner = card.querySelector('.card-inner');
-
-  if (topics.includes(topic)) {
-    inner.classList.add('highlighted');
-  } else {
-    inner.classList.remove('highlighted');
-  }
-});
-
-
-        
-        
 </script>      
 <ul class="M_paper-list mobile-only">
 <li>
@@ -179,10 +365,10 @@ cards.forEach(card => {
   <div class="fade-in-item">
     <div class="M_paper-title">
         <b>15. Grothendieck positivity for normal square root crystals</b>
-        <a href="https://www.arxiv.org/abs/2501.16640" target="_blank">[PDF]</a>
+        <a href="https://www.sciencedirect.com/science/article/abs/pii/S0001870826003397" target="_blank">[PDF]</a>
     </div>
     <div class="M_collaborator">with Eric Marberg and Kam Hung Tong</div>
-    <div class="M_submitted">(Advances in Mathematics, in revision)</div>
+    <div class="M_journal">(Advances in Mathematics, 2026)</div>
   </div>
 </li>
 
@@ -344,7 +530,7 @@ cards.forEach(card => {
 <div class="card-grid">
     
     <div class="card-container fade-in-item desktop-only" ><div class="wiggle-on-hover">
-    <div class="card-inner" data-topics="bumpless pipedream">
+    <div class="card-inner" data-topics="bumpless pipedream, schubert calculus">
       <div class="card-front">
           <div class="paper-title-container">
               <a class = "paper-title" href="https://arxiv.org/abs/2512.12185" target="_blank"><b>A positive combinatorial formula for the double Edelman--Greene coefficients</b> </a></div>
@@ -357,14 +543,14 @@ cards.forEach(card => {
   </div>
     
   <div class="card-container fade-in-item desktop-only" > <div class="wiggle-on-hover">
-    <div class="card-inner" data-topics="grothendieck polynomial,crystal">  
+    <div class="card-inner" data-topics="grothendieck polynomial,crystal, schubert calculus">  
       <div class="card-front">
           <div class="paper-title-container" >
-  <a class="paper-title" href="https://www.arxiv.org/abs/2501.16640" target="_blank"><b>Grothendieck positivity for normal square root crystals</b></a>
+  <a class="paper-title" href="https://www.sciencedirect.com/science/article/abs/pii/S0001870826003397" target="_blank"><b>Grothendieck positivity for normal square root crystals</b></a>
     
 </div>
         <div class="paper-meta">with Eric Marberg and Kam Hung Tong</div>
-        <div class="submitted">Advances in Mathematics, in revision</div>
+        <div class="paper-journal"><i>Advances in Mathematics</i>, 2026</div>
         </div>
       <div class="card-back">
         
@@ -376,7 +562,7 @@ cards.forEach(card => {
     
 
   <div class="card-container fade-in-item desktop-only" ><div class="wiggle-on-hover">
-    <div class="card-inner" data-topics="grothendieck polynomial">
+    <div class="card-inner" data-topics="grothendieck polynomial, schubert calculus">
       <div class="card-front">
           <div class="paper-title-container">
               <a class = "paper-title" href="https://www.arxiv.org/abs/2412.20615" target="_blank"><b>Tableau formula for vexillary double Edelman--Greene coefficients</b> </a></div>
@@ -391,7 +577,7 @@ cards.forEach(card => {
   </div>
     
   <div class="card-container fade-in-item desktop-only"><div class="wiggle-on-hover">
-    <div class="card-inner" data-topics="grothendieck polynomial, bumpless pipedream, pipedream">
+    <div class="card-inner" data-topics="grothendieck polynomial, bumpless pipedream, pipedream, schubert calculus">
       <div class="card-front">
         
         <div class="paper-title-container">
@@ -409,7 +595,7 @@ cards.forEach(card => {
   </div>
       
   <div class="card-container fade-in-item desktop-only"><div class="wiggle-on-hover">
-    <div class="card-inner" data-topics="bumpless pipedream, pipedream">
+    <div class="card-inner" data-topics="bumpless pipedream, pipedream, schubert calculus">
       <div class="card-front">
         
          <div class="paper-title-container">
@@ -425,7 +611,7 @@ cards.forEach(card => {
   </div>
     
   <div class="card-container fade-in-item desktop-only"><div class="wiggle-on-hover">
-    <div class="card-inner" data-topics="grothendieck polynomial, pipedream, rajcode">
+    <div class="card-inner" data-topics="grothendieck polynomial, pipedream, schubert calculus">
       <div class="card-front">
         
         <div class="paper-title-container">
@@ -441,7 +627,7 @@ cards.forEach(card => {
   </div>
  
     <div class="card-container fade-in-item desktop-only"><div class="wiggle-on-hover">
-    <div class="card-inner" data-topics="grothendieck polynomial, lascoux polynomial, hecke insertion">
+    <div class="card-inner" data-topics="grothendieck polynomial, lascoux polynomial, schubert calculus">
       <div class="card-front">
         
       <div class="paper-title-container">
@@ -457,7 +643,7 @@ cards.forEach(card => {
  </div>
         
   <div class="card-container fade-in-item desktop-only"><div class="wiggle-on-hover">
-    <div class="card-inner" data-topics="grothendieck polynomial, pipedream, rajcode">
+    <div class="card-inner" data-topics="grothendieck polynomial, pipedream, schubert calculus">
       <div class="card-front">
           <div class="paper-title-container">
 <a class="paper-title" href="https://www.combinatorics.org/ojs/index.php/eljc/article/view/v31i3p15" target="_blank"><b>Constructing maximal pipedreams of double Grothendieck polynomials</b> </a></div>
@@ -486,7 +672,7 @@ cards.forEach(card => {
   </div>
     
   <div class="card-container fade-in-item desktop-only"><div class="wiggle-on-hover">
-    <div class="card-inner" data-topics="lascoux polynomial, bumpless pipedream">
+    <div class="card-inner" data-topics="lascoux polynomial, bumpless pipedream, schubert calculus">
       <div class="card-front">
           <div class="paper-title-container">
 <a class="paper-title" href="https://alco.centre-mersenne.org/articles/10.5802/alco.439/" target="_blank"><b>Connection between Schubert polynomials and top Lascoux polynomials</b> </a></div>
@@ -501,7 +687,7 @@ cards.forEach(card => {
   </div>
 
   <div class="card-container fade-in-item desktop-only"><div class="wiggle-on-hover">
-    <div class="card-inner" data-topics="grothendieck polynomial, lascoux polynomial, rajcode">
+    <div class="card-inner" data-topics="grothendieck polynomial, lascoux polynomial, schubert calculus">
       <div class="card-front">
           <div class="paper-title-container"><a class="paper-title" href="https://alco.centre-mersenne.org/articles/10.5802/alco.326/" target="_blank"><b>Top-degree components of Grothendieck and Lascoux polynomials</b></a></div>       
         <div class="paper-meta">with Jianping Pan</div>
@@ -514,7 +700,7 @@ cards.forEach(card => {
   </div>
       
   <div class="card-container fade-in-item desktop-only"><div class="wiggle-on-hover">
-    <div class="card-inner" data-topics="grothendieck polynomial, hecke insertion">
+    <div class="card-inner" data-topics="grothendieck polynomial, schubert calculus">
       <div class="card-front">
           <div class="paper-title-container">
 <a class="paper-title" href="https://escholarship.org/uc/item/7069j7xd" target="_blank"><b>A row analogue of Hecke column insertion</b> </a></div>
@@ -529,7 +715,7 @@ cards.forEach(card => {
   </div>
     
   <div class="card-container fade-in-item desktop-only"><div class="wiggle-on-hover">
-    <div class="card-inner" data-topics="lascoux polynomial">
+    <div class="card-inner" data-topics="lascoux polynomial, schubert calculus">
       <div class="card-front">
           <div class="paper-title-container">
 <a class="paper-title" href="https://www.combinatorics.org/ojs/index.php/eljc/article/view/v30i4p26" target="_blank"><b>A bijection between K-Kohnert diagrams and reverse set-valued tableaux</b> </a></div>
@@ -544,7 +730,7 @@ cards.forEach(card => {
   </div>
 
   <div class="card-container fade-in-item desktop-only"><div class="wiggle-on-hover">
-    <div class="card-inner" data-topics="lascoux polynomial, crystal">
+    <div class="card-inner" data-topics="lascoux polynomial, crystal, schubert calculus">
       <div class="card-front">
           <div class="paper-title-container">
 <a class="paper-title" href="https://escholarship.org/uc/item/2qp6q4w9" target="_blank"><b>Set-valued tableaux rule for Lascoux polynomials</b> </a></div>
@@ -559,7 +745,7 @@ cards.forEach(card => {
   </div>
 
   <div class="card-container fade-in-item desktop-only"><div class="wiggle-on-hover">
-    <div class="card-inner" data-topics="grothendieck polynomial, lascoux polynomial, hecke insertion">
+    <div class="card-inner" data-topics="grothendieck polynomial, lascoux polynomial, schubert calculus">
       <div class="card-front">
           <div class="paper-title-container">
 <a class="paper-title" href="https://www.ams.org/tran/2023-376-07/S0002-9947-2023-08912-7/S0002-9947-2023-08912-7.pdf" target="_blank"><b>Grothendieck to Lascoux expansions</b> </a></div>
@@ -603,6 +789,8 @@ cards.forEach(card => {
     
   <div class="talk-year fade-in-item">2026</div>
   <ul class="talk-list">
+      <li class="fade-in-item">Sep. Rutgers University. New Brunswick, NJ.</li>
+      <li class="fade-in-item">Sep. University at Albany. Albany, NY.</li>
       <li class="fade-in-item">Jul. University of Washington. Seattle, WA.[FPSAC]</li>
       <li class="fade-in-item">Apr. University of Michigan. Ann Arbor, MI.</li>
       <li class="fade-in-item">Feb. University of California, San Diego. San Diego, CA.</li>
@@ -676,36 +864,8 @@ cards.forEach(card => {
     </ul>
 </div>
 </section>  
-</body>
-</html>
-
-
-
 <script>
-  window.addEventListener('DOMContentLoaded', () => {
-    document.body.classList.add('loaded');
-  });
-</script>
-
-<script>
-  const underline = document.getElementById('underline');
-
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        underline.classList.add('visible');
-        observer.unobserve(underline); // 只动画一次
-      }
-    });
-  }, { threshold: 0.6 });
-
-  observer.observe(underline);
-    
-
-</script>
-
-<script>
-    document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => {
   const fadeItems = document.querySelectorAll('.fade-in-item, .fade-in-underline');
 
   const observer = new IntersectionObserver(entries => {
@@ -722,27 +882,5 @@ cards.forEach(card => {
   fadeItems.forEach(item => observer.observe(item));
 });
 </script>
-
-  <script>
-      
-      
-    document.addEventListener("DOMContentLoaded", () => {
-      const items = document.querySelectorAll('.fade-in-item');
-
-      const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-            observer.unobserve(entry.target); // 触发一次就取消观察
-          }
-        });
-      }, {
-        threshold: 0.1
-      });
-
-      items.forEach(item => observer.observe(item));
-    });
-  </script>
-
-
-
+</body>
+</html>
